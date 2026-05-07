@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pedra Angular | Estrutural</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estrutural.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="container">
+            <div class="logo" onclick="window.location.href='home.html'">
+                Pedra <span>Angular</span>
+            </div>
+            <ul class="nav-links">
+            <li><a href="../home_page/home.html">Início</a></li>
+                <li><a href="../alvenaria/alvenaria.html" class="active">Alvenaria</a></li>
+                <li><a href="../ferramentas/ferramentas.html">Ferramentas</a></li>
+                <li><a href="../estrutural/estrutural.html">Estrutural</a></li>
+                <li><a href="../natureza/natural.html">Natural</a></li>
+                <li class="cart-menu">
+                    <a href="#" id="cartBtn">
+                        🛒 Carrinho <span id="cartCount">0</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="catalog-header">
+        <h1>Linha <span>Estrutural</span></h1>
+        <p>A sustentação e segurança que o seu projeto exige.</p>
+    </section>
+
+    <main class="container">
+        <div class="product-grid" id="productGrid">
+            <!-- Injetado pelo JS -->
+        </div>
+    </main>
+
+    <!-- Modal Carrinho -->
+    <div id="cartModal" class="modal">
+        <div class="modal-content">
+            <h3>Seu Orçamento</h3>
+            <div id="cartItemsList">
+                <p>Seu carrinho está vazio.</p>
+            </div>
+            <div class="cart-total">
+                <strong>Total: R$ <span id="totalValue">0,00</span></strong>
+            </div>
+            <button class="btn-checkout" onclick="finalizarPedido()">Finalizar Pedido</button>
+            <button class="btn-close" id="closeCart">Fechar</button>
+        </div>
+    </div>
+
+    <!-- Notificação Toast -->
+    <div id="toast" class="toast">Produto adicionado! 🏗️</div>
+
+    <script src="estrutural.js"></script>
+</body>
+</html>
