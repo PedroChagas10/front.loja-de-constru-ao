@@ -1,5 +1,5 @@
 const produtos = [
-    { id: 201, nome: "Vergalhão CA-50 8.0mm 3/8", preco: 48.90, cat: "Aço", Image: "VERGALHAO 8M" },
+    { id: 201, nome: "Vergalhão CA-50 8.0mm 3/8", preco: 48.90, cat: "Aço", image: "./assets/VERGALHAO 8M.png" },
     { id: 202, nome: "Vergalhão CA-50 10.0mm", preco: 62.00, cat: "Aço", img: "img/vergalhao10.jpg" },
     { id: 203, nome: "Coluna Pronta 7x14 6m", preco: 89.00, cat: "Armação", img: "img/coluna.jpg" },
     { id: 204, nome: "Treliça H12 6m", preco: 55.00, cat: "Armação", img: "img/trelica.jpg" },
